@@ -1,0 +1,64 @@
+pre .hljs {
+  background-color: #fff;
+  color: #383a42;
+
+  &-comment,
+  &-quote {
+    color: #a0a1a7;
+    font-style: italic;
+  }
+  &-doctag,
+  &-formula,
+  &-keyword {
+    color: #a626a4;
+  }
+  &-deletion,
+  &-name,
+  &-section,
+  &-selector-tag,
+  &-subst {
+    color: #e45649;
+  }
+  &-literal {
+    color: #0184bb;
+  }
+  &-addition,
+  &-attribute,
+  &-meta &-string,
+  &-regexp,
+  &-string {
+    color: #50a14f;
+  }
+  &-attr,
+  &-number,
+  &-selector-attr,
+  &-selector-class,
+  &-selector-pseudo,
+  &-template-variable,
+  &-type,
+  &-variable {
+    color: #986801;
+  }
+  &-bullet,
+  &-link,
+  &-meta,
+  &-selector-id,
+  &-symbol,
+  &-title {
+    color: #4078f2;
+  }
+  &-built_in,
+  &-class &-title,
+  &-title.class_ {
+    color: #c18401;
+  }
+  &-emphasis {
+    font-style: italic;
+  }
+  &-strong {
+    font-weight: 700;
+  }
+  &-link {
+    text-decoration: underline;
+  }
+}

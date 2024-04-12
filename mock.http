@@ -1,0 +1,7 @@
+
+post http://localhost:3000/document-embedding
+Content-Type:application/json;charset=utf-8
+
+{
+  "question":"df"
+}

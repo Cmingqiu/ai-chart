@@ -1,0 +1,75 @@
+.chat {
+  height: calc(100% - 25px);
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .question-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    .el-textarea {
+      flex: 1;
+      margin-right: 10px;
+    }
+  }
+
+  .list {
+    flex: 1;
+    overflow: auto;
+    &-item {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      &.user {
+        flex-direction: row-reverse;
+        img {
+          margin-left: 10px;
+        }
+        .time {
+          text-align: right;
+        }
+      }
+      &.assistant {
+        img {
+          margin-right: 10px;
+        }
+        // 闪烁的光标
+        .flashy {
+          &::after {
+            content: '';
+            height: 16px;
+            border-right: 5px solid;
+            animation: effect 0.5s step-end infinite alternate;
+          }
+        }
+      }
+
+      .time {
+        color: #ccc;
+        font-size: 12px;
+      }
+      .content-box {
+        background-color: #f6f6f6;
+        border-radius: 3px;
+        min-width: 450px;
+        padding: 10px;
+        margin-top: 5px;
+        white-space: pre-wrap;
+      }
+    }
+  }
+
+  @keyframes effect {
+    50% {
+      border-color: transparent;
+    }
+  }
+}

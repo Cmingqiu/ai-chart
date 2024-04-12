@@ -1,0 +1,16 @@
+@import './chat.scss';
+@import './highlight-theme/atom-one-light.scss';
+// @import './highlight-theme/atom-one-dark.scss';
+
+pre {
+  margin: 10px 0;
+  .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace, Microsoft YaHei;
+  }
+}
