@@ -1,5 +1,4 @@
-export const BASE_URL = 'https://api.chatanywhere.com.cn/v1';
-// export const BASE_URL = 'https://api.chatanywhere.cn/v1';
+export const BASE_URL = 'https://api.openai.com/v1';
 
 export const OPENAI_KEY = 'sk-ohgNI3jkjkibDLrGmBevXijalxV6J3V97iYv1XANC31odp4k';
 
